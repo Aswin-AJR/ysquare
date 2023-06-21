@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "acafb166-d862-4a6e-90b6-aab818c97255",
+		"name": "ysquare",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22483434"
+	},
+	"item": [
+		{
+			"name": "create customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Aswin1\",\r\n    \"lastName\": \"Joseph Raj\",\r\n    \"address\": \"asa\",\r\n    \"email\": \"atest@gmail.com\",\r\n    \"password\": \"test124\",\r\n    \"phoneNumber\": \"Assistant\",\r\n    \"status\": true,\r\n    \"createdBy\": \"Admin\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3100/api/ysquare/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"api",
+						"ysquare",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Aswin1\",\r\n    \"lastName\": \"Joseph Raj\",\r\n    \"email\": \"aswinjr061@gmail.com\",\r\n    \"password\": \"test124\",\r\n    \"role\": \"Manager\",\r\n    \"status\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3100/api/ysquare/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"api",
+						"ysquare",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"filter\": {\r\n    },\r\n    \"limit\": 100,\r\n    \"page\": 0,\r\n    \"sort\": {}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3100/api/ysquare/readuser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"api",
+						"ysquare",
+						"readuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"filter\": {},\r\n    \"limit\": 1000,\r\n    \"page\": 0,\r\n    \"sort\": {}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3100/api/ysquare/readcustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"api",
+						"ysquare",
+						"readcustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update cust",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"filter\": {\"id\": 7},\r\n    \"fields\":{\"firstName\": \"Aswin1\"}\r\n}\r\n\r\n\r\n            ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3100/api/ysquare/updatecustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"api",
+						"ysquare",
+						"updatecustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"filter\": {\"id\": 6},\r\n    \"fields\":{\"firstName\": \"Aswin1\"}\r\n}\r\n\r\n\r\n            ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3100/api/ysquare/updateuser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3100",
+					"path": [
+						"api",
+						"ysquare",
+						"updateuser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
